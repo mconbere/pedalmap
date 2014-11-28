@@ -1,0 +1,38 @@
+Variables:
+
+	Distance from beacon (1 meter?)
+	Time stopped for end of ride (maybe doesn't matter if beacon distance is awesome)
+
+Features:
+
+	Auto upload to strava?
+
+Registering beacons logic:
+
+	Configure based on UUID/major minor number to register bike. Give it a name?
+
+Tracking rides logic:
+
+				if (beacon in range and in close proximity) {
+					start tracking location.
+				}
+
+				while (tracking location AND beacon in range) {
+					if (moving) {
+						record GPS path traveled.
+					}
+				}
+
+				if (no movement for long time OR beacon no longer in range) {
+					mark as bike ride.
+				}
+
+Statistics to play with:
+- # rides
+- Total distance
+- Avg distance per ride
+- Total time
+- Avg time per ride
+- Weather during rides
+- When do people ride bikes? If it rains, how much does it change?
+- Time of day (commuting data)
